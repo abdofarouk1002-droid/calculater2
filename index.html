@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <h1>advanced calculator</h1>
+        <button onclick="darkmode()">dark mode</button>
+
+        <input id="input1" type="number" placeholder="enter the first number">
+        <select  id="operation">
+            <option value="+">add</option>
+            <option value="-">sub</option>
+            <option value="/">div</option>
+            <option value="*">multiply</option>
+            <option value="^">power</option>
+            <option value="sqrt">square root (value)</option>
+            <option value="%">percentage</option>
+        </select> 
+        <input id="input2"type="number"placeholder=" enter the second number ">
+        <button onclick="calculate()">calculate</button>
+        <button onclick="clearFields()">clear</button>
+        <div class="result">
+           
+            <h3 id="result">0</h3>
+        </div>
+
+
+        <div class="history">
+            <h3>HistoryList:</h3>
+            <ul id="historyList"></ul>
+
+    
+    </div>
+
+
+
+
+
+
+    <script src="js.js"></script>
+</body>
+</html>
